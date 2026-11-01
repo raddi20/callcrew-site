@@ -1,7 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="16" fill="#0d9488"/>
-  <path d="M20 27.5c0-7.2 5.5-13.2 12.6-13.2" stroke="#ecfeff" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M44.5 36c0 7-5.3 12.6-12.1 12.6" stroke="#99f6e4" stroke-width="4.5" stroke-linecap="round"/>
-  <rect x="43" y="25.5" width="6.5" height="13" rx="3.25" fill="#ecfeff"/>
-  <path d="M22.5 39.5c2.8 3.6 6.6 5.6 10.9 5.6s8.1-2 10.9-5.6" stroke="#042f2e" stroke-width="3.2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CallCrew">
+  <rect width="64" height="64" rx="18" fill="#0f766e"/>
+  <!-- headset band -->
+  <path d="M16 30c0-10 7.2-17.5 16.5-17.5S49 20 49 30" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <!-- ear cups -->
+  <rect x="11" y="28" width="10" height="16" rx="5" fill="#fff"/>
+  <rect x="43" y="28" width="10" height="16" rx="5" fill="#fff"/>
+  <!-- face plate for contrast -->
+  <circle cx="32" cy="36" r="14" fill="#ecfeff"/>
+  <!-- wink (left eye closed) -->
+  <path d="M25.5 33.5h5" stroke="#0f766e" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- open eye (right) -->
+  <circle cx="37.5" cy="33.2" r="2.2" fill="#0f766e"/>
+  <!-- smile -->
+  <path d="M25.5 40c2.6 3.2 6 4.8 9.8 4.8 2.2 0 4.2-.5 6-1.5" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
 </svg>
