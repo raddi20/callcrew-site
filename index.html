@@ -3,262 +3,312 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CallCrew | AI Receptionist for Emergency Plumbing & HVAC</title>
-  <meta name="description" content="CallCrew answers every call for plumbing and HVAC shops — triage emergencies, capture jobs, text the owner. $247/mo + $497 setup. Hear the live demo." />
-  <meta property="og:title" content="CallCrew | Never miss another emergency call" />
-  <meta property="og:description" content="Done-for-you AI receptionist for emergency plumbing and HVAC. 24/7 answer, triage, job capture, owner SMS." />
-  <meta property="og:url" content="https://usecallcrew.com/" />
+  <title>CallCrew | AI Receptionist for Emergency Plumbing &amp; HVAC</title>
+  <meta name="description" content="CallCrew is a done-for-you AI receptionist for plumbing and HVAC shops. Answers 24/7, triages emergencies, captures jobs, texts the owner. $247/mo + $497 setup. Call the live demo." />
+  <meta name="keywords" content="AI receptionist, plumbing answering service, HVAC after hours answering, emergency call triage, contractor AI phone" />
   <link rel="canonical" href="https://usecallcrew.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://usecallcrew.com/" />
+  <meta property="og:title" content="CallCrew | Never miss another emergency call" />
+  <meta property="og:description" content="Done-for-you AI receptionist for emergency plumbing and HVAC. Live demo available now." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0f766e" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"CallCrew","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Done-for-you AI receptionist for emergency plumbing and HVAC shops.","offers":{"@type":"Offer","price":"247","priceCurrency":"USD","description":"Monthly plan plus $497 setup"},"url":"https://usecallcrew.com/"}
+  </script>
   <style>
-    :root {
-      --ink: #0b1220;
-      --muted: #4b5565;
-      --line: #e5e7eb;
-      --bg: #f6f7f9;
-      --card: #ffffff;
-      --brand: #0f766e;
-      --brand-dark: #0b5f59;
-      --brand-soft: #ecfdf8;
-      --warn: #9a3412;
-      --shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
-      --radius: 18px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.55;
-    }
-    a { color: inherit; }
-    .container { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
-    .nav {
-      position: sticky; top: 0; z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(246,247,249,0.9);
-      border-bottom: 1px solid rgba(229,231,235,0.8);
-    }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 12px; }
-    .logo { font-weight: 800; letter-spacing: -0.03em; font-size: 1.15rem; color: var(--brand); text-decoration: none; }
-    .nav-links { display: flex; gap: 18px; align-items: center; font-size: 0.95rem; color: var(--muted); }
-    .nav-links a { text-decoration: none; }
-    .nav-links a:hover { color: var(--ink); }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      border-radius: 999px; padding: 12px 18px; font-weight: 700; text-decoration: none;
-      border: 1px solid transparent; transition: 0.15s ease;
-    }
-    .btn-primary { background: var(--brand); color: #fff; }
-    .btn-primary:hover { background: var(--brand-dark); }
-    .btn-secondary { background: #fff; border-color: var(--line); color: var(--ink); }
-    .btn-secondary:hover { border-color: #cbd5e1; }
-    .btn-lg { padding: 14px 22px; font-size: 1.05rem; }
-    .hero {
-      padding: 56px 0 28px;
-      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: stretch;
-    }
-    @media (max-width: 860px) {
-      .hero { grid-template-columns: 1fr; padding-top: 36px; }
-      .nav-links .hide-sm { display: none; }
-    }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--brand-soft); color: var(--brand-dark);
-      border: 1px solid #a7f3d0; border-radius: 999px;
-      padding: 6px 12px; font-size: 0.82rem; font-weight: 700;
-    }
-    h1 {
-      font-size: clamp(2.2rem, 4.5vw, 3.3rem);
-      line-height: 1.05; letter-spacing: -0.035em; margin: 16px 0 14px;
-    }
-    .lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 22px; max-width: 38rem; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
-    .trust-row { display: flex; flex-wrap: wrap; gap: 10px 16px; color: var(--muted); font-size: 0.92rem; }
-    .trust-row span::before { content: "✓ "; color: var(--brand); font-weight: 800; }
-    .panel {
-      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-      box-shadow: var(--shadow); padding: 22px;
-    }
-    .panel h2 { margin: 0 0 8px; font-size: 1.15rem; letter-spacing: -0.02em; }
-    .phone {
-      font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 800; letter-spacing: -0.03em;
-      color: var(--brand); text-decoration: none; display: inline-block; margin: 8px 0 6px;
-    }
-    .phone:hover { text-decoration: underline; }
-    .muted { color: var(--muted); }
-    .small { font-size: 0.9rem; }
-    .section { padding: 42px 0; }
-    .section h2 { font-size: 1.75rem; letter-spacing: -0.03em; margin: 0 0 8px; }
-    .section-intro { color: var(--muted); margin: 0 0 22px; max-width: 40rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .grid-2 { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; }
-    @media (max-width: 860px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px;
-    }
-    .card h3 { margin: 0 0 8px; font-size: 1.05rem; letter-spacing: -0.02em; }
-    .card p { margin: 0; color: var(--muted); }
-    .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
-    .steps li {
-      counter-increment: step; display: grid; grid-template-columns: 36px 1fr; gap: 12px;
-      padding: 14px 0; border-bottom: 1px solid var(--line);
-    }
-    .steps li:last-child { border-bottom: 0; }
-    .steps li::before {
-      content: counter(step); width: 36px; height: 36px; border-radius: 50%;
-      background: var(--brand-soft); color: var(--brand-dark); font-weight: 800;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .price-box {
-      background: linear-gradient(180deg, #0f766e 0%, #0b5f59 100%);
-      color: #fff; border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow);
-    }
-    .price-box .amount { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.04em; }
-    .price-box .amount span { font-size: 1rem; font-weight: 600; opacity: 0.9; }
-    .price-box ul { margin: 14px 0 18px; padding-left: 1.1rem; }
-    .price-box li { margin: 8px 0; }
-    .badge {
-      display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 999px; padding: 4px 10px; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px;
-    }
-    .quote {
-      border-left: 4px solid var(--brand); padding: 4px 0 4px 14px; color: var(--muted); font-style: italic;
-    }
-    .cta-band {
-      margin: 10px 0 50px; padding: 28px; border-radius: var(--radius);
-      background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
-      display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
-    }
-    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 0.9rem; }
-    footer strong { color: var(--ink); }
+    :root{--ink:#07111f;--muted:#526072;--line:#e6eaf0;--bg:#f4f6f8;--card:#fff;--brand:#0f766e;--brand2:#0b5f59;--soft:#e8faf6;--sand:#fff7ed;--shadow:0 18px 50px rgba(7,17,31,.08);--r:20px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    a{color:inherit} img{max-width:100%;display:block}
+    .wrap{width:min(1120px,calc(100% - 1.5rem));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:40;background:rgba(244,246,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(230,234,240,.9)}
+    .nav-i{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.85rem 0}
+    .logo{font-weight:800;letter-spacing:-.03em;color:var(--brand);text-decoration:none;font-size:1.2rem}
+    .nav-a{display:flex;gap:.6rem;align-items:center}
+    .nav-a .l{display:none;gap:1rem;color:var(--muted);font-size:.95rem}
+    .nav-a .l a{text-decoration:none}
+    @media(min-width:860px){.nav-a .l{display:flex}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:999px;padding:.8rem 1.15rem;font-weight:750;text-decoration:none;border:1px solid transparent;transition:.15s}
+    .btn-p{background:var(--brand);color:#fff}.btn-p:hover{background:var(--brand2)}
+    .btn-s{background:#fff;border-color:var(--line)}.btn-s:hover{border-color:#c9d2de}
+    .btn-xl{padding:1rem 1.35rem;font-size:1.05rem}
+    .hero{padding:2.5rem 0 1.25rem;display:grid;gap:1.25rem}
+    @media(min-width:920px){.hero{grid-template-columns:1.15fr .85fr;gap:1.75rem;padding-top:3.25rem;align-items:stretch}}
+    .pill{display:inline-flex;align-items:center;gap:.4rem;background:var(--soft);color:var(--brand2);border:1px solid #a7f3d0;border-radius:999px;padding:.35rem .75rem;font-size:.8rem;font-weight:750}
+    h1{font-size:clamp(2.1rem,5.2vw,3.45rem);line-height:1.02;letter-spacing:-.04em;margin:.85rem 0 .85rem}
+    .lede{font-size:1.12rem;color:var(--muted);margin:0 0 1.2rem;max-width:38rem}
+    .actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1rem}
+    .checks{display:grid;gap:.45rem;color:var(--muted);font-size:.95rem}
+    .checks span::before{content:"✓ ";color:var(--brand);font-weight:800}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+    .demo{padding:1.25rem}
+    .demo h2{margin:0 0 .35rem;font-size:1.1rem;letter-spacing:-.02em}
+    .phone{display:inline-block;font-size:clamp(1.55rem,3.5vw,2rem);font-weight:850;letter-spacing:-.035em;color:var(--brand);text-decoration:none;margin:.35rem 0}
+    .phone:hover{text-decoration:underline}
+    .muted{color:var(--muted)}.s{font-size:.9rem}
+    .bar{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin:1.25rem 0 0}
+    @media(min-width:720px){.bar{grid-template-columns:repeat(4,1fr)}}
+    .bar .card{padding:1rem;text-align:center}
+    .bar strong{display:block;font-size:1.05rem;letter-spacing:-.02em}
+    .sec{padding:2.5rem 0}
+    .sec h2{font-size:clamp(1.55rem,3vw,2rem);letter-spacing:-.03em;margin:0 0 .45rem}
+    .intro{color:var(--muted);margin:0 0 1.2rem;max-width:42rem}
+    .g3{display:grid;gap:.9rem}
+    @media(min-width:800px){.g3{grid-template-columns:repeat(3,1fr)}}
+    .g2{display:grid;gap:1rem}
+    @media(min-width:900px){.g2{grid-template-columns:1.1fr .9fr}}
+    .tile{padding:1.15rem}
+    .tile h3{margin:0 0 .4rem;font-size:1.05rem;letter-spacing:-.02em}
+    .tile p{margin:0;color:var(--muted)}
+    .prob{background:linear-gradient(180deg,#fff,#f8fafc);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
+    .prob ul{margin:.6rem 0 0;padding-left:1.1rem;color:var(--muted)}
+    .steps{counter-reset:st;list-style:none;margin:0;padding:0}
+    .steps li{counter-increment:st;display:grid;grid-template-columns:2.2rem 1fr;gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--line)}
+    .steps li:last-child{border-bottom:0}
+    .steps li::before{content:counter(st);width:2.2rem;height:2.2rem;border-radius:50%;background:var(--soft);color:var(--brand2);font-weight:850;display:flex;align-items:center;justify-content:center}
+    .price{background:linear-gradient(165deg,#0f766e,#0a4f4a);color:#fff;border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow)}
+    .price .amt{font-size:clamp(2.2rem,5vw,2.8rem);font-weight:850;letter-spacing:-.04em}
+    .price .amt span{font-size:1rem;font-weight:650;opacity:.9}
+    .price ul{margin:.9rem 0 1.1rem;padding-left:1.1rem}
+    .price li{margin:.45rem 0}
+    .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.25rem .65rem;font-size:.78rem;font-weight:750;margin-bottom:.55rem}
+    .proof{display:grid;gap:.75rem}
+    @media(min-width:800px){.proof{grid-template-columns:repeat(3,1fr)}}
+    .proof .tile{background:var(--sand);border:1px dashed #fdba74}
+    .proof .tag{font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#9a3412;margin-bottom:.35rem}
+    .faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.85rem 1rem;margin:.55rem 0}
+    .faq summary{cursor:pointer;font-weight:750;letter-spacing:-.01em}
+    .faq p{margin:.55rem 0 0;color:var(--muted)}
+    .band{margin:1rem 0 2.5rem;padding:1.25rem;border-radius:var(--r);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+    .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:.65rem .75rem calc(.65rem + env(safe-area-inset-bottom));background:rgba(7,17,31,.94);display:flex;gap:.55rem;justify-content:center}
+    .sticky .btn{flex:1;max-width:20rem}
+    @media(min-width:860px){.sticky{display:none}}
+    body{padding-bottom:4.5rem}
+    @media(min-width:860px){body{padding-bottom:0}}
+    footer{border-top:1px solid var(--line);padding:1.5rem 0 2.25rem;color:var(--muted);font-size:.9rem}
+    footer strong{color:var(--ink)}
+    .compare{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+    table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px}
+    th,td{padding:.75rem .8rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f8fafc;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+    tr:last-child td{border-bottom:0}
+    .yes{color:var(--brand2);font-weight:750}
   </style>
 </head>
 <body>
   <header class="nav">
-    <div class="container nav-inner">
+    <div class="wrap nav-i">
       <a class="logo" href="/">CallCrew</a>
-      <div class="nav-links">
-        <a class="hide-sm" href="#how">How it works</a>
-        <a class="hide-sm" href="#pricing">Pricing</a>
-        <a class="btn btn-secondary" href="tel:+15674831497">Call demo</a>
-        <a class="btn btn-primary" href="tel:+15674831497">+1 (567) 483-1497</a>
+      <div class="nav-a">
+        <div class="l">
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="btn btn-s" href="tel:+15674831497">Call demo</a>
+        <a class="btn btn-p" href="tel:+15674831497">+1 (567) 483-1497</a>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <main class="wrap">
     <section class="hero">
       <div>
-        <div class="eyebrow">Open for plumbing &amp; HVAC shops · US first</div>
-        <h1>Your after-hours line that never misses an emergency.</h1>
-        <p class="lede">CallCrew is a done-for-you AI receptionist for emergency plumbing and HVAC. It answers every ring, triages burst pipes and no-heat, captures the job, and texts you — so your shop stops losing after-hours revenue.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="tel:+15674831497">Hear the live demo · +1 (567) 483-1497</a>
-          <a class="btn btn-secondary btn-lg" href="#pricing">See pricing</a>
+        <div class="pill">Open now · Plumbing &amp; HVAC · Done-for-you</div>
+        <h1>Never miss another emergency call.</h1>
+        <p class="lede">CallCrew is the AI receptionist built for emergency plumbing and HVAC shops. It answers 24/7, triages real emergencies, captures the job, and texts you — so after-hours work stops dying in voicemail.</p>
+        <div class="actions">
+          <a class="btn btn-p btn-xl" href="tel:+15674831497">Hear live demo · +1 (567) 483-1497</a>
+          <a class="btn btn-s btn-xl" href="#pricing">View pricing</a>
         </div>
-        <div class="trust-row">
-          <span>Answers 24/7</span>
-          <span>Emergency triage built in</span>
-          <span>Owner SMS on every job</span>
-          <span>We set it up for you</span>
+        <div class="checks">
+          <span>Emergency triage for burst pipes, backups, no-heat / no-AC</span>
+          <span>Owner SMS with address, callback, and urgency</span>
+          <span>We configure voice, scripts, and go-live — not DIY</span>
         </div>
       </div>
-      <aside class="panel">
-        <h2>Live demo line</h2>
-        <p class="muted small">Call now and try a burst-pipe or no-heat scenario. This is a real CallCrew agent.</p>
+      <aside class="card demo">
+        <h2>Talk to CallCrew right now</h2>
+        <p class="muted s">Call the live line. Try “burst pipe” or “no heat.” No form required.</p>
         <a class="phone" href="tel:+15674831497">+1 (567) 483-1497</a>
-        <p class="muted small">No pitch deck required — hear it in under a minute.</p>
-        <hr style="border:none;border-top:1px solid var(--line);margin:16px 0;" />
-        <p class="quote">“When the phone rings at 1 a.m., someone has to pick up. CallCrew does — and texts you before the caller hangs up.”</p>
+        <p class="muted s">US demo line · English · Available now</p>
+        <hr style="border:none;border-top:1px solid var(--line);margin:1rem 0" />
+        <p class="muted s"><strong style="color:var(--ink)">Paid pilots open this month</strong> for shops ready to stop missing after-hours jobs. Setup + first month. Convert or stop after 30 days.</p>
       </aside>
     </section>
 
-    <section class="section" id="who">
-      <h2>Built for emergency trades</h2>
-      <p class="section-intro">If missed calls mean flooded floors or freezing customers, you need more than a generic voicemail bot.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Plumbing shops</h3>
-          <p>Burst pipes, backups, water heaters, gas smell — prioritized so true emergencies get through first.</p>
-        </div>
-        <div class="card">
-          <h3>HVAC companies</h3>
-          <p>No heat / no AC with hardship flags, so vulnerable homes get same-night attention.</p>
-        </div>
-        <div class="card">
-          <h3>Owner-operators</h3>
-          <p>Done-for-you setup. You forward missed or after-hours calls; we handle the rest.</p>
-        </div>
-      </div>
-    </section>
+    <div class="bar">
+      <div class="card"><strong>24/7 answer</strong><span class="muted s">Nights, weekends, lunch rush</span></div>
+      <div class="card"><strong>Trade triage</strong><span class="muted s">Emergency vs routine, built in</span></div>
+      <div class="card"><strong>Owner alert</strong><span class="muted s">Text as the call ends</span></div>
+      <div class="card"><strong>Done-for-you</strong><span class="muted s">We set it up with you</span></div>
+    </div>
 
-    <section class="section" id="how">
-      <h2>How CallCrew works</h2>
-      <p class="section-intro">From first ring to owner SMS — without hiring another dispatcher.</p>
-      <div class="grid-2">
-        <ol class="steps panel">
-          <li><div><strong>We configure your agent</strong><br /><span class="muted">Voice, scripts, triage rules, and SMS — set up for your shop in days, not DIY.</span></div></li>
-          <li><div><strong>Forward after-hours &amp; missed calls</strong><br /><span class="muted">Keep your daytime number. Overflow and nights go to CallCrew.</span></div></li>
-          <li><div><strong>AI answers &amp; triages</strong><br /><span class="muted">Captures name, callback, address, and severity. Books a slot or takes the job note.</span></div></li>
-          <li><div><strong>You get the text</strong><br /><span class="muted">Immediate SMS with urgency and details so your tech can roll.</span></div></li>
-        </ol>
-        <div class="panel">
-          <h2>What callers experience</h2>
-          <ul class="muted" style="margin:10px 0 0;padding-left:1.1rem;">
-            <li>Friendly after-hours greeting in your shop’s name</li>
-            <li>Clear emergency vs. morning questions</li>
-            <li>Guidance to shut off water when safe</li>
-            <li>Promise of a fast owner callback on true emergencies</li>
+    <section class="sec" id="problem">
+      <h2>Missed after-hours calls are missed revenue.</h2>
+      <p class="intro">Generic AI phone tools and DIY builders are flexible — but emergency trades need urgency, clear next steps, and an owner who gets the details immediately.</p>
+      <div class="g3">
+        <div class="prob">
+          <h3 style="margin:0 0 .35rem;letter-spacing:-.02em">What shops lose</h3>
+          <ul>
+            <li>Burst-pipe callers who dial the next company</li>
+            <li>No-heat / no-AC hardship calls that wait until morning</li>
+            <li>Incomplete notes that create truck rolls</li>
+          </ul>
+        </div>
+        <div class="prob">
+          <h3 style="margin:0 0 .35rem;letter-spacing:-.02em">What CallCrew does</h3>
+          <ul>
+            <li>Answers in your shop’s name</li>
+            <li>Separates emergency from routine</li>
+            <li>Captures name, callback, address, issue</li>
+            <li>Texts you before the caller hangs up</li>
+          </ul>
+        </div>
+        <div class="prob">
+          <h3 style="margin:0 0 .35rem;letter-spacing:-.02em">Who it’s for</h3>
+          <ul>
+            <li>Plumbing shops with after-hours demand</li>
+            <li>HVAC companies covering heat/AC emergencies</li>
+            <li>Owner-operators who can’t staff nights</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section" id="pricing">
-      <h2>Simple pricing</h2>
-      <p class="section-intro">One plan for shops that can’t afford a missed emergency. Paid pilots available this month.</p>
-      <div class="grid-2">
-        <div class="price-box">
-          <div class="badge">Most shops start here</div>
-          <div class="amount">$247<span>/month</span></div>
+    <section class="sec" id="how">
+      <h2>How it works</h2>
+      <p class="intro">From first ring to owner SMS — without hiring another dispatcher.</p>
+      <div class="g2">
+        <ol class="steps card" style="padding:1rem 1.1rem">
+          <li><div><strong>We configure your agent</strong><br><span class="muted">Voice, emergency scripts, SMS routing, and go-live testing.</span></div></li>
+          <li><div><strong>You forward overflow / after-hours</strong><br><span class="muted">Keep your daytime number. Nights and missed calls go to CallCrew.</span></div></li>
+          <li><div><strong>Callers get a real conversation</strong><br><span class="muted">Triage, job capture, and a clear next step — not a phone tree.</span></div></li>
+          <li><div><strong>You get the text</strong><br><span class="muted">Urgency, address, and callback so your tech can roll.</span></div></li>
+        </ol>
+        <div class="card tile">
+          <h3>Built for trades, not law firms</h3>
+          <p>Competitors like Smith.ai optimize for legal intake. Goodcall and Dialzara are strong generalists. OnCrew speaks contractor. CallCrew goes deeper on <strong>emergency plumbing and HVAC</strong> — with a live demo you can hear before you buy.</p>
+          <p style="margin-top:.8rem">No claims of “0 missed calls forever.” We focus on answering, triaging, and getting you the details fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="compare">
+      <h2>How CallCrew compares</h2>
+      <p class="intro">Honest positioning against common AI receptionist options. Verify current competitor pricing on their sites.</p>
+      <div class="compare">
+        <table>
+          <thead>
+            <tr><th></th><th>CallCrew</th><th>DIY AI builders</th><th>Generic AI receptionists</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Setup</td><td class="yes">Done-for-you</td><td>You configure</td><td>Varies</td></tr>
+            <tr><td>Emergency plumbing / HVAC triage</td><td class="yes">Purpose-built</td><td>You write rules</td><td>Often generic</td></tr>
+            <tr><td>Live demo line</td><td class="yes">Call now</td><td>Usually after signup</td><td>Sometimes</td></tr>
+            <tr><td>Pricing shape</td><td class="yes">Flat $247/mo + setup</td><td>Often per-minute</td><td>Often per-minute / per-call</td></tr>
+            <tr><td>Best fit</td><td class="yes">Emergency trades</td><td>Teams with time to tinker</td><td>General small business</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="sec" id="proof">
+      <h2>Social proof</h2>
+      <p class="intro">Early pilots in progress. Placeholders below — we’ll replace with real shop quotes as they come in. No fabricated reviews.</p>
+      <div class="proof">
+        <div class="tile card">
+          <div class="tag">Placeholder</div>
+          <p>“We needed nights covered without hiring. CallCrew took the emergency calls and texted me the address.”</p>
+          <p class="s muted" style="margin-top:.6rem">— Plumbing owner, pending pilot quote</p>
+        </div>
+        <div class="tile card">
+          <div class="tag">Placeholder</div>
+          <p>“The demo line sold me. Burst-pipe triage felt like our after-hours desk.”</p>
+          <p class="s muted" style="margin-top:.6rem">— HVAC owner, pending pilot quote</p>
+        </div>
+        <div class="tile card">
+          <div class="tag">Placeholder</div>
+          <p>“Setup was done for us. We forwarded after-hours and went live the same week.”</p>
+          <p class="s muted" style="margin-top:.6rem">— Trade shop, pending pilot quote</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="pricing">
+      <h2>Clear pricing</h2>
+      <p class="intro">One commercial plan. Paid pilots available. No long annual lock-in required to start.</p>
+      <div class="g2">
+        <div class="price">
+          <div class="badge">CallCrew for emergency trades</div>
+          <div class="amt">$247<span>/month</span></div>
           <div>+ $497 one-time setup</div>
           <ul>
-            <li>Done-for-you voice agent &amp; scripts</li>
+            <li>Done-for-you agent, scripts, and go-live</li>
             <li>Emergency triage for plumbing &amp; HVAC</li>
             <li>Job capture + owner SMS</li>
-            <li>US demo-proven flow (UK / AU / CA next)</li>
+            <li>US-ready now · UK / AU / CA next</li>
           </ul>
-          <a class="btn btn-secondary btn-lg" style="background:#fff;color:var(--brand-dark);" href="tel:+15674831497">Call the demo to start a pilot</a>
+          <a class="btn btn-s btn-xl" style="background:#fff;color:var(--brand2)" href="tel:+15674831497">Call demo to start a pilot</a>
         </div>
-        <div class="panel">
-          <h2>What’s included in setup</h2>
-          <p class="muted">Number wiring, voice agent, emergency scripts, calendar/SMS handoff, and go-live testing with your team.</p>
-          <p class="muted" style="margin-top:14px;"><strong style="color:var(--ink);">30-day paid pilot:</strong> setup + first month. Convert to ongoing or stop — no long annual lock-in.</p>
-          <p class="muted" style="margin-top:14px;">Serving English-speaking markets: United States first, then United Kingdom, Australia, and Canada.</p>
+        <div class="card tile">
+          <h3>What’s in setup</h3>
+          <p>Number wiring, voice agent, emergency scripts, SMS handoff, and test calls with your team.</p>
+          <p style="margin-top:.85rem"><strong>30-day paid pilot:</strong> setup + first month. Continue or stop — your call.</p>
+          <p class="s muted" style="margin-top:.85rem">Minute-metered DIY tools can look cheaper on paper. CallCrew prices the outcome: covered nights with trade triage, configured for you.</p>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" id="demo">
-      <div>
-        <strong style="font-size:1.2rem;letter-spacing:-0.02em;">Ready when you are.</strong>
-        <p class="muted" style="margin:6px 0 0;">Call the live line, hear a burst-pipe or no-heat triage, then we’ll set up your shop.</p>
+    <section class="sec" id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details open>
+          <summary>Is the demo a real CallCrew agent?</summary>
+          <p>Yes. Call +1 (567) 483-1497 and try an emergency scenario. It’s the same product class we deploy for shops.</p>
+        </details>
+        <details>
+          <summary>Do I replace my daytime receptionist?</summary>
+          <p>Most shops use CallCrew for after-hours and overflow first. Keep your daytime workflow; forward nights and missed calls.</p>
+        </details>
+        <details>
+          <summary>Is this DIY like Goodcall or Dialzara?</summary>
+          <p>No. Those tools are strong if you want to build and tune yourself. CallCrew is done-for-you for emergency plumbing and HVAC.</p>
+        </details>
+        <details>
+          <summary>Do you guarantee zero missed calls?</summary>
+          <p>No. We don’t make absolute guarantees. We focus on answering, triaging emergencies, capturing details, and alerting you quickly.</p>
+        </details>
+        <details>
+          <summary>How fast can we go live?</summary>
+          <p>Most pilots aim for days, not weeks — after we lock scripts, forwarding, and SMS destination.</p>
+        </details>
       </div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <a class="btn btn-primary btn-lg" href="tel:+15674831497">+1 (567) 483-1497</a>
-        <a class="btn btn-secondary btn-lg" href="mailto:raddi20@gmail.com?subject=CallCrew%20pilot">Email about a pilot</a>
+    </section>
+
+    <section class="band" id="cta">
+      <div>
+        <strong style="font-size:1.15rem;letter-spacing:-.02em">Hear it. Then we’ll set up your shop.</strong>
+        <p class="muted" style="margin:.35rem 0 0">Call the live demo, then book a pilot for after-hours coverage.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.55rem">
+        <a class="btn btn-p btn-xl" href="tel:+15674831497">+1 (567) 483-1497</a>
+        <a class="btn btn-s btn-xl" href="mailto:hello@usecallcrew.com?subject=CallCrew%20pilot">Request a pilot</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
+    <div class="wrap">
       <p><strong>CallCrew</strong> — AI receptionist for emergency plumbing and HVAC.</p>
-      <p>Demo: <a href="tel:+15674831497">+1 (567) 483-1497</a> · <a href="https://usecallcrew.com">usecallcrew.com</a></p>
-      <p style="margin-top:10px;">© 2026 CallCrew. All rights reserved.</p>
+      <p>Demo <a href="tel:+15674831497">+1 (567) 483-1497</a> · <a href="https://usecallcrew.com">usecallcrew.com</a></p>
+      <p style="margin-top:.6rem">© 2026 CallCrew. All rights reserved.</p>
     </div>
   </footer>
+
+  <div class="sticky" aria-label="Mobile call to action">
+    <a class="btn btn-p" href="tel:+15674831497">Call demo +1 (567) 483-1497</a>
+  </div>
 </body>
 </html>
